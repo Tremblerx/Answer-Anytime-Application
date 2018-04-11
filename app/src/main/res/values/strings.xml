@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">实验一</string>
+    <string name="xingming">姓名</string>
+    <string name="xingbie">性别</string>
+    <string name="zhuanye">专业</string>
+    <string name="xingqu">兴趣爱好</string>
+    <string name="xingqu1">音乐</string>
+    <string name="xingqu2">运动</string>
+    <string name="xingqu3">游泳</string>
+    <string name="xingqu4">阅读</string>
+    <string-array name="zhuanye">
+        <item>计算机科学与技术</item>
+        <item>软件工程</item>
+        <item>网络工程</item>
+        <item>应用数学</item>
+    </string-array>
+    <string name="queding">确定</string>
+    <string name="quxiao">取消</string>
+</resources>

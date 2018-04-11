@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/xingming"
+            android:padding="5sp"
+            />
+        <EditText android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="10sp"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xingbie"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5sp"/>
+        <RadioGroup android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"/>
+            <RadioButton android:id="@+id/rbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="10sp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zhuanye"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5sp"/>
+        <Spinner android:layout_gravity="center"
+            android:layout_margin="5sp"
+            android:id="@+id/sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/zhuanye">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="@string/xingqu"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xingqu1"/>
+
+            <CheckBox android:id="@+id/cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xingqu2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/cb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xingqu3"/>
+
+            <CheckBox android:id="@+id/cb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xingqu4"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/queding"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:layout_marginRight="80sp"/>
+
+        <Button android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quxiao"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>
